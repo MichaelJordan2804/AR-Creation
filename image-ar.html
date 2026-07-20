@@ -111,6 +111,7 @@
     </div>
 
     <a-scene
+    
         mindar-image="
             imageTargetSrc: ./targets/targets.mind;
             warmupTolerance: 5;
@@ -128,7 +129,12 @@
         vr-mode-ui="enabled: false"
         device-orientation-permission-ui="enabled: false"
         loading-screen="enabled: true">
-
+<a-assets timeout="30000">
+    <a-asset-item
+        id="trophy-model"
+        src="./models/anniversary-trophy.glb">
+    </a-asset-item>
+</a-assets>
         <!-- Camera controlled by MindAR -->
         <a-camera
             position="0 0 0"
@@ -143,24 +149,7 @@
             id="anniversary-target"
             mindar-image-target="targetIndex: 0">
 
-            <!-- Temporary 3D object for testing -->
-            <a-box
-                position="0 0 0.2"
-                width="0.4"
-                height="0.4"
-                depth="0.4"
 
-                color="#FFD700"
-
-                animation="
-                    property: rotation;
-                    from: 0 0 0;
-                    to: 0 360 0;
-                    dur: 5000;
-                    easing: linear;
-                    loop: true;
-                ">
-            </a-box>
 
             <!-- Small text above the cube -->
             <a-text
