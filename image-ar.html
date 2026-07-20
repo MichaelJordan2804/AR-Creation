@@ -135,6 +135,13 @@
         src="./models/anniversary-trophy.glb">
     </a-asset-item>
 </a-assets>
+
+<a-assets timeout="30000">
+    <a-asset-item
+        id="trophy-model2"
+        src="./models/anniversary-trophy.glb">
+    </a-asset-item>
+</a-assets>
         <!-- Camera controlled by MindAR -->
         <a-camera
             position="0 0 0"
@@ -151,6 +158,14 @@
 
     <!-- 3D trophy -->
     <a-entity
+        id="trophy"
+        gltf-model="#trophy-model"
+        position="10 0 0.1"
+        rotation="0 0 0"
+        scale="1.0 1.0 1.0">
+    </a-entity>
+
+        <a-entity
         id="trophy"
         gltf-model="#trophy-model"
         position="0 0 0.1"
