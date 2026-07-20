@@ -145,22 +145,29 @@
             targetIndex: 0 means the first image
             compiled inside targets.mind.
         -->
-        <a-entity
-            id="anniversary-target"
-            mindar-image-target="targetIndex: 0">
+<a-entity
+    id="anniversary-target"
+    mindar-image-target="targetIndex: 0">
 
+    <!-- 3D trophy -->
+    <a-entity
+        id="trophy"
+        gltf-model="#trophy-model"
+        position="0 0 0.1"
+        rotation="0 0 0"
+        scale="0.2 0.2 0.2">
+    </a-entity>
 
+    <!-- Text above the trophy -->
+    <a-text
+        value="Happy Anniversary!"
+        position="0 0.42 0.05"
+        align="center"
+        color="#FFFFFF"
+        width="2">
+    </a-text>
 
-            <!-- Small text above the cube -->
-            <a-text
-                value="Happy Anniversary!"
-                position="0 0.42 0.05"
-                align="center"
-                color="#FFFFFF"
-                width="2">
-            </a-text>
-
-        </a-entity>
+</a-entity>
 
     </a-scene>
 
